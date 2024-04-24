@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="Imagenes/boton-de-inicio.png">
+  <link rel="stylesheet" href="Estilos/EstiloBase.css">
+  <link rel="stylesheet" href="Estilos/EstiloForm.css">
+  <link rel="stylesheet" href="Estilos/EstiloBarraNav.css">
+  <title>Formulario de Usuarios</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="Imagenes/plan-de-estudios.png" alt="Mountains" width="8%" height="8%">
+  </div>
+
+  <div class="row">
+    <div class="col-3 menu">
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Info.html">Informacion</a></li>
+        <li><a class="active" href="Formulario.html">Formulario</a></li>
+        <li><a href="Galeria.html"> Galeria</a></li>
+        <li><a href="Usuarios.html">Usuario</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6">
+      <h1 class="hover-1">Caja de opiniones</h1>
+      <!-- Formulario -->
+<!------------------------------------------------------------------------------------------------------->
+      <div class="container">
+        <form id="cajacomentarios" onsubmit="alert('Estas a punto de cargar los datos')">
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Nombre">Nombre</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="nomb" name="nombre" required autocomplete="off" placeholder="Nombre...">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Apellido">Apellido</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="apell" name="apellido" required autocomplete="off" placeholder="Apellido...">
+            </div>
+          </div>
+          <div class="row">
+
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="cajadecomentario">Comentarios</label>
+            </div>
+            <div class="col-75">
+              <textarea id="cajacomentario" name="comentario" placeholder="Dejanos tu comentario..."
+                style="height:150px"></textarea>
+            </div>
+          </div>
+
+          <br>
+          <div class="row">
+            <input id="EnviarComentarios" type="submit" value="Enviar" onclick="formulario()">
+          </div>
+        </form>
+      </div>
+      <br>
+ <!------------------------------------------------------------------------------------------------------->
+      <!-- Formulario de Respuesta -->
+      <div class="container">
+        <form id="formularioRespuesta">
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Rnombre">Nombre</label>
+            </div>
+
+            <div class="col-75">
+              <input type="text" readonly id="Rnomb" name="Rnombre" placeholder="Nombre...">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Rapellido">Apellido</label>
+            </div>
+
+            <div class="col-75">
+              <input type="text" readonly id="Rapell" name="Rapellido" placeholder="Apellido...">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="cajadecomentario">Comentarios</label>
+            </div>
+            <div class="col-75">
+              <textarea id="Rcajacomentario" name="Rcomentario" readonly placeholder="Tu comentario..."
+                style="height:150px" value="readonly"></textarea>
+            </div>
+          </div>
+            <br>
+            <div class="row">
+              <input id="ImprimirComentarios" type="submit" value="Imprimir" onclick="imprimir()" >
+            </div>
+            <br>
+            <p id="Rimprimircomentario">Imprimir Comentario</p>
+        </form>
+
+      </div>
+      <!------------------------------------------------------------------------------------------------------->
+      <!-- Formulario de Respuesta -->
+
+      <!-- Formulario -->
+    </div>
+
+    <div class="col-3 right">
+      <div class="aside">
+        <h2>¿Qué?</h2>
+        <p>Esta página web está diseñada en un formato adaptativo (Responsive). </p>
+        <h2>¿Dónde?</h2>
+        <p>Creado siguiendo los pasos del curso de programación Argentina Programa.</p>
+        <h2>¿Cómo?</h2>
+        <p>Haciendo uso de diversos materiales en la web, junto a la guía del tutor a cargo del curso. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Proyecto de desarrollo Web hecho por Rafael Fernández.</p>
+  </div>
+  <script src="Js/JQformulario.js"></script>
+</body>
+
+</html>

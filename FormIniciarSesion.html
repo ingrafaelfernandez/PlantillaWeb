@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Imagenes/boton-de-inicio.png">
+    <link rel="stylesheet" href="Estilos/EstiloForm.css">
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <div class="container">
+        <form id="nuevosUsuarios" onsubmit="alert('Estas a punto de cargar los datos')">
+            <div class="row">
+                <div class="col-25">
+                    <label for="nombreUsu">Nombre de Usuario</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nombreUsu" name="nomUsuario" required autocomplete="off" placeholder="Nombre de Usuario...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="contraS">Clave</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="contraS" name="clave" required autocomplete="off" placeholder="Clave...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="roll">Rol Usuario</label>
+                </div>
+                <div class="col-75">
+                    <select id="roll" name="roll">
+                        <option value=""></option>
+                        <option value="administrador">Administrador</option>
+                        <option value="usuario">Usuario</option>
+                        <option value="invitado">Invitado</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <br>
+            <div class="row">
+                <input id="registrar" type="submit" value="Submit" >
+            </div>
+        </form>
+       
+    </div>
+    <!-- <script src="Js/JQusuarios.js"></script> -->
+    <script src="Js/IniciarSesion.js"></script>
+</body>
+</html>
